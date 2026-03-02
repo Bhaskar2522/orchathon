@@ -1,0 +1,37 @@
+'use client';
+
+import React from 'react';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero"; // Keeping for reference if SpaceHero fails, but we use SpaceHero below
+import Mission from "@/components/Mission";
+import Themes from "@/components/Themes";
+import Prizes from "@/components/Prizes";
+import Timeline from "@/components/Timeline";
+import Registration from "@/components/Registration";
+import Sponsors from "@/components/Sponsors";
+import Footer from "@/components/Footer";
+import SpaceHero from "@/components/SpaceHero";
+import Reviews from "@/components/Reviews";
+import { motion } from "framer-motion";
+
+export default function HomePage() {
+    return (
+        <main className="min-h-screen bg-black relative overflow-x-hidden">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+            >
+                <SpaceHero />
+                <Mission />
+                <Themes />
+                <Prizes />
+                <Timeline />
+                <Registration />
+                <Sponsors />
+                <Reviews />
+                <Footer />
+            </motion.div>
+        </main>
+    );
+}

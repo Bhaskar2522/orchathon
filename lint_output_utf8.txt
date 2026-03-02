@@ -1,0 +1,143 @@
+
+E:\Temp\hackthontrail-master\hackthontrail-master\app\home\page.tsx
+  4:8  warning  'Navbar' is defined but never used  @typescript-eslint/no-unused-vars
+  5:8  warning  'Hero' is defined but never used    @typescript-eslint/no-unused-vars
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx
+    6:8   warning  'RocketShip' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  149:66  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:149:66
+  147 |                                                 animate={{
+  148 |                                                     opacity: [0, 1, 0],
+> 149 |                                                     y: [0, 200 + Math.random() * 100],
+      |                                                                  ^^^^^^^^^^^^^ Cannot call impure function
+  150 |                                                     x: [(Math.random() - 0.5) * 60, (Math.random() - 0.5) * 200],
+  151 |                                                     scale: [0.2, 1.5, 3]
+  152 |                                                 }}                                  react-hooks/purity
+  150:58  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:150:58
+  148 |                                                     opacity: [0, 1, 0],
+  149 |                                                     y: [0, 200 + Math.random() * 100],
+> 150 |                                                     x: [(Math.random() - 0.5) * 60, (Math.random() - 0.5) * 200],
+      |                                                          ^^^^^^^^^^^^^ Cannot call impure function
+  151 |                                                     scale: [0.2, 1.5, 3]
+  152 |                                                 }}
+  153 |                                                 transition={{                                       react-hooks/purity
+  150:86  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:150:86
+  148 |                                                     opacity: [0, 1, 0],
+  149 |                                                     y: [0, 200 + Math.random() * 100],
+> 150 |                                                     x: [(Math.random() - 0.5) * 60, (Math.random() - 0.5) * 200],
+      |                                                                                      ^^^^^^^^^^^^^ Cannot call impure function
+  151 |                                                     scale: [0.2, 1.5, 3]
+  152 |                                                 }}
+  153 |                                                 transition={{           react-hooks/purity
+  154:69  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:154:69
+  152 |                                                 }}
+  153 |                                                 transition={{
+> 154 |                                                     duration: 0.4 + Math.random() * 0.4,
+      |                                                                     ^^^^^^^^^^^^^ Cannot call impure function
+  155 |                                                     repeat: Infinity,
+  156 |                                                     delay: Math.random() * 0.2,
+  157 |                                                     ease: "easeOut"                                                                   react-hooks/purity
+  156:60  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:156:60
+  154 |                                                     duration: 0.4 + Math.random() * 0.4,
+  155 |                                                     repeat: Infinity,
+> 156 |                                                     delay: Math.random() * 0.2,
+      |                                                            ^^^^^^^^^^^^^ Cannot call impure function
+  157 |                                                     ease: "easeOut"
+  158 |                                                 }}
+  159 |                                                 className="absolute rounded-full blur-sm"                                                react-hooks/purity
+  162:68  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:162:68
+  160 |                                                 style={{
+  161 |                                                     backgroundColor: i % 3 === 0 ? '#00E0FF' : i % 3 === 1 ? '#FF0055' : '#FFFFFF',
+> 162 |                                                     width: `${10 + Math.random() * 20}px`,
+      |                                                                    ^^^^^^^^^^^^^ Cannot call impure function
+  163 |                                                     height: `${10 + Math.random() * 20}px`,
+  164 |                                                     zIndex: -1
+  165 |                                                 }}  react-hooks/purity
+  163:69  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\IntroLaunch.tsx:163:69
+  161 |                                                     backgroundColor: i % 3 === 0 ? '#00E0FF' : i % 3 === 1 ? '#FF0055' : '#FFFFFF',
+  162 |                                                     width: `${10 + Math.random() * 20}px`,
+> 163 |                                                     height: `${10 + Math.random() * 20}px`,
+      |                                                                     ^^^^^^^^^^^^^ Cannot call impure function
+  164 |                                                     zIndex: -1
+  165 |                                                 }}
+  166 |                                             />           react-hooks/purity
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\Mission.tsx
+  23:66  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\Navbar.tsx
+  3:27  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\SpaceHero.tsx
+   7:20  warning  'Twitter' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   7:56  warning  'X' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   7:59  warning  'Rocket' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  15:11  warning  'y2' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+  23:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\SpaceHero.tsx:23:9
+  21 |     // Rocket Ignition Sequence Simulation
+  22 |     useEffect(() => {
+> 23 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  24 |         setDebris(Array.from({ length: 5 }).map(() => ({
+  25 |             top: Math.random() * 100,
+  26 |             left: Math.random() * 100,  react-hooks/set-state-in-effect
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\SpaceJourney.tsx
+  3:17  warning  'useRef' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\Starfield.tsx
+  9:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\Temp\hackthontrail-master\hackthontrail-master\components\Starfield.tsx:9:9
+   7 |
+   8 |     useEffect(() => {
+>  9 |         setStars({
+     |         ^^^^^^^^ Avoid calling setState() directly within an effect
+  10 |             sm: generateStars(700),
+  11 |             md: generateStars(200),
+  12 |             lg: generateStars(100)  react-hooks/set-state-in-effect
+
+G£û 19 problems (10 errors, 9 warnings)
+
